@@ -1,17 +1,15 @@
 # DCS World EM線図測定用スクリプト
 
 
-
-##使い方
-
-###準備
+### QuickStart
+### 準備
 ・Tacview (Advanced以上)のインストール
 ・DCS Worldのオプションより、SPECIAL -> Tacviewを選択
 　　Real-Time Telemetry をEnabled、TCP Portを42672、Passwordなし
 　　Remote Control をEnabled、TCP Portを42675、Passwordなし
 
 
-###QuickStart
+### 測定
 ・EMDiaglamMeasurement.mizでFly
 
 ・同じPC上のpythonを実行できる環境で以下のコマンドを実行
@@ -20,7 +18,7 @@
 ・Ctrl+Cで終了
 
 
-##コマンド引数
+## コマンド引数
 　python3 TacviewControl.py AOACommand AltitudeCommand [PitchGain] [RollGain]
 　
 　AOACommand: 指定されたAOAで旋回する
@@ -29,7 +27,7 @@
 　RollGain: デフォルト1。高度、AOAの条件によってはロール角が振動して安定しない場合がある。その場合PitchGainを0.5～0.25程度に下げる
 
 
-##測定用ミッション作成
+## 測定用ミッション作成
 ・EMDiaglamMeasurement.mizを参考にミッションを作成する
 　　-マップ上に測定対象の機体1機のみ配置、パイロットはPlayer
 　　-測定用の高度、速度にある程度合わせておく
